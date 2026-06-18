@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">App Lock</string>
+
+    <!-- Hero area -->
+    <string name="title_app_lock_security">App Lock\nSecurity</string>
+    <string name="subtitle_two_steps">Complete two quick steps to start\nprotecting your apps instantly.</string>
+    <string name="cd_shield_icon">Shield lock icon</string>
+
+    <!-- Card 1 — Accessibility -->
+    <string name="label_enable_accessibility">Enable Accessibility Service</string>
+    <string name="desc_accessibility">Allows App Lock to detect which app is in the foreground and display the lock screen when required.</string>
+
+    <!-- Card 2 — Device Admin -->
+    <string name="label_enable_device_admin">Activate Device Admin</string>
+    <string name="desc_device_admin">Grants App Lock permission to enforce screen lock policies and prevent unauthorised deactivation.</string>
+
+    <!-- Status chips -->
+    <string name="status_required">Required</string>
+    <string name="status_granted">Granted ✓</string>
+
+    <!-- CTA -->
+    <string name="cta_activate">Activate Protection</string>
+
+    <!-- Footnote -->
+    <string name="footnote_privacy">Your data never leaves your device.\nNo account or internet connection required.</string>
+
+    <!-- Accessibility service description (shown in Settings → Accessibility) -->
+    <string name="accessibility_service_description">App Lock uses the Accessibility Service to monitor foreground apps and display the lock screen for protected applications. No personal data is collected or transmitted.</string>
+    <string name="app_lock_service_label">App Lock Security</string>
+</resources>

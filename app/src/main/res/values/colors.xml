@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ── Surfaces ─────────────────────────────────────────────── -->
+    <color name="oneui_page_bg">#F2F2F2</color>
+    <color name="oneui_card_surface">#FFFFFF</color>
+    <color name="oneui_card_stroke">#EBEBEB</color>
+
+    <!-- Hero band — light grey gradient -->
+    <color name="hero_band_start">#E6E6E6</color>
+    <color name="hero_band_end">#F2F2F2</color>
+
+    <!-- ── Accent — Classic Samsung Blue ────────────────────────── -->
+    <color name="oneui_accent_blue">#006BDB</color>
+    <color name="oneui_accent_blue_light">#E6F0FA</color>
+
+    <!-- ── Typography ────────────────────────────────────────────── -->
+    <color name="text_primary">#000000</color>
+    <color name="text_secondary">#6B6B6B</color>
+    <color name="text_footnote">#8C8C8C</color>
+    <color name="oneui_chevron_color">#BDBDBD</color>
+
+    <!-- ── Step badges ────────────────────────────────────────────── -->
+    <color name="badge_active_bg">#006BDB</color>
+    <color name="badge_inactive_bg">#E0E0E0</color>
+    <color name="badge_inactive_text">#6B6B6B</color>
+
+    <!-- ── Progress dots ─────────────────────────────────────────── -->
+    <color name="dot_active">#006BDB</color>
+    <color name="dot_inactive">#D4D4D4</color>
+
+    <!-- ── Status chips ──────────────────────────────────────────── -->
+    <color name="chip_required_bg">#FFF3E0</color>
+    <color name="chip_required_stroke">#FFB74D</color>
+    <color name="chip_required_text">#E65100</color>
+
+    <color name="chip_granted_bg">#E8F5E9</color>
+    <color name="chip_granted_stroke">#81C784</color>
+    <color name="chip_granted_text">#2E7D32</color>
+
+    <!-- ── CTA Button ────────────────────────────────────────────── -->
+    <color name="cta_enabled_bg">#006BDB</color>
+    <color name="cta_disabled_bg">#E0E0E0</color>
+    <color name="selector_cta_bg">#006BDB</color>
+
+    <color name="on_accent_white">#FFFFFF</color>
+</resources>

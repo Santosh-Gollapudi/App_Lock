@@ -1,0 +1,27 @@
+# gradle/libs.versions.toml
+# ─────────────────────────────────────────────────────────────────────────────
+# Version Catalog — single place to bump library versions.
+# Android Studio's "Upgrade Dependencies" action edits this file directly.
+# ─────────────────────────────────────────────────────────────────────────────
+
+[versions]
+agp                     = "9.2.1"
+kotlin                  = "2.2.10"
+coreKtx                 = "1.13.1"
+appcompat               = "1.7.0"
+activity                = "1.9.3"
+
+# ── The two libraries that fix all "Cannot resolve class" errors ───────────
+constraintlayout        = "2.1.4"   # androidx.constraintlayout.widget.ConstraintLayout
+material                = "1.12.0"  # MaterialCardView, MaterialButton, Chip, Material3 styles
+
+[libraries]
+androidx-core-ktx           = { group = "androidx.core",                 name = "core-ktx",             version.ref = "coreKtx"          }
+androidx-appcompat          = { group = "androidx.appcompat",            name = "appcompat",             version.ref = "appcompat"         }
+androidx-activity           = { group = "androidx.activity",             name = "activity",              version.ref = "activity"          }
+androidx-constraintlayout   = { group = "androidx.constraintlayout",     name = "constraintlayout",      version.ref = "constraintlayout"  }
+material                    = { group = "com.google.android.material",   name = "material",              version.ref = "material"          }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp"    }
+kotlin-android      = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

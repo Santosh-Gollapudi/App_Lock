@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    res/values/themes.xml
+    ─────────────────────
+    FIX for ERROR 2b: "@style/Widget.Material3.Chip.Assist" cannot resolve
+    unless the Activity's theme descends from Theme.Material3 (or
+    Theme.MaterialComponents.DayNight at minimum).
+
+    The activity in AndroidManifest.xml must declare:
+        android:theme="@style/Theme.AppLock"
+
+    Widget.Material3.Chip.Assist and all other Material3 widget styles
+    are injected into the theme hierarchy by the Material library at
+    compile-time — they cannot be resolved without this parent.
+-->
+<resources>
+
+    <style name="Theme.AppLock.Transparent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>  <!-- No slide animation -->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>

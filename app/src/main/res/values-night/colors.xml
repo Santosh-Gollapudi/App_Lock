@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ── Surfaces ─────────────────────────────────────────────── -->
+    <color name="oneui_page_bg">#101012</color>
+    <color name="oneui_card_surface">#1E1E22</color>
+    <color name="oneui_card_stroke">#2A2A32</color>
+
+    <!-- Hero band — dark teal-to-page gradient -->
+    <color name="hero_band_start">#141824</color>
+    <color name="hero_band_end">#101012</color>
+
+    <!-- ── Accent — slightly lighter for contrast on dark bg ─────── -->
+    <color name="oneui_accent_blue">#4A8FF5</color>
+    <color name="oneui_accent_blue_light">#1A2840</color>
+
+    <!-- ── Typography ────────────────────────────────────────────── -->
+    <color name="text_primary">#E8E8EE</color>
+    <color name="text_secondary">#9898A8</color>
+    <color name="text_footnote">#55555F</color>
+    <color name="oneui_chevron_color">#3A3A44</color>
+
+    <!-- ── Step badges ────────────────────────────────────────────── -->
+    <color name="badge_active_bg">#1A3A70</color>
+    <color name="badge_inactive_bg">#2A2A34</color>
+    <color name="badge_inactive_text">#55555F</color>
+
+    <!-- ── Progress dots ─────────────────────────────────────────── -->
+    <color name="dot_active">#4A8FF5</color>
+    <color name="dot_inactive">#2C2C36</color>
+
+    <!-- ── Status chips ──────────────────────────────────────────── -->
+    <color name="chip_required_bg">#2A1F08</color>
+    <color name="chip_required_stroke">#7A5200</color>
+    <color name="chip_required_text">#F0A830</color>
+
+    <color name="chip_granted_bg">#0D2B14</color>
+    <color name="chip_granted_stroke">#1D6B30</color>
+    <color name="chip_granted_text">#4CD07A</color>
+
+    <!-- ── CTA Button ────────────────────────────────────────────── -->
+    <color name="cta_enabled_bg">#1A4AAA</color>
+    <color name="cta_disabled_bg">#2A2A34</color>
+    <color name="selector_cta_bg">#4A8FF5</color>
+</resources>

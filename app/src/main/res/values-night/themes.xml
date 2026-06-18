@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    res/values-night/themes.xml
+    ───────────────────────────
+    Night override: flip windowLightStatusBar so the system
+    draws white status-bar icons on the dark background.
+-->
+<resources>
+
+    <style name="Theme.AppLock" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/oneui_accent_blue</item>
+        <item name="colorOnPrimary">@color/on_accent_white</item>
+        <item name="colorSurface">@color/oneui_page_bg</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:windowBackground">@color/oneui_page_bg</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!-- Dark mode: light icons false → white icons on dark bar -->
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+</resources>

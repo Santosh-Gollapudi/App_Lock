@@ -48,3 +48,7 @@ This app requires highly elevated system permissions (Accessibility and Device A
 ## Contributing
 
 Contributions, bug reports, and pull requests are always welcome!
+
+## Disclaimer!
+There maybe some bugs and errors. I am still working on it.
+Thankyou for your understanding

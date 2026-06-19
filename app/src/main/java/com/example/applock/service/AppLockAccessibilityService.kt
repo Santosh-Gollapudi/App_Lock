@@ -5,6 +5,7 @@ import android.accessibilityservice.AccessibilityServiceInfo
 import android.app.Notification
 import android.app.NotificationChannel
 import android.app.NotificationManager
+import android.content.Context
 import android.content.Intent
 import android.os.Build
 import android.view.accessibility.AccessibilityEvent
@@ -25,11 +26,6 @@ class AppLockAccessibilityService : AccessibilityService() {
         // THE AMNESIA FIX: Remembers the app you just unlocked
         @Volatile var unlockedPackage: String? = null
     }
-
-    private val lockedPackages = mutableSetOf(
-        "com.instagram.android",
-        "com.whatsapp"
-    )
 
     override fun onServiceConnected() {
         super.onServiceConnected()
@@ -67,6 +63,10 @@ class AppLockAccessibilityService : AccessibilityService() {
         val isRealApp = packageManager.getLaunchIntentForPackage(currentPackage) != null
 
         if (isRealApp) {
+            // Fetch the live list of locked apps from SharedPreferences
+            val prefs = getSharedPreferences("AppLockPrefs", Context.MODE_PRIVATE)
+            val lockedPackages = prefs.getStringSet("LOCKED_APPS", setOf()) ?: setOf()
+
             // The user opened an actual app.
             if (lockedPackages.contains(currentPackage)) {
                 // It's a locked app. Throw the lock screen.

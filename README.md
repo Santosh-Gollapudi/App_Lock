@@ -28,18 +28,14 @@ Building a reliable app locker on modern Android versions is notoriously difficu
 3. When it detects the package name of a locked app coming to the foreground, it instantly launches `LockScreenActivity` over it.
 4. If the biometric authentication succeeds, the lock screen finishes, and the user continues to their app.
 
-## Installation & Setup
+## Installation
 
-If you want to build and run this project locally:
+You can download and install the app directly to your Android device:
 
-1. Clone the repository:
-
-   git clone [https://github.com/Santosh-Gollapudi/AppLock.git](https://github.com/Santosh-Gollapudi/AppLock.git)
-
-2. Open the project in **Android Studio**.
-3. Sync the project with Gradle files.
-4. Build and install the APK on your physical device (emulators often lack fingerprint hardware to test properly).
-5. **Crucial Step:** When you first launch the app, you will be prompted to enable **Accessibility Services** and **Device Admin** privileges. The app cannot function without these!
+1. Go to the **Releases** section on the right side of this GitHub page (or click [here](https://github.com/Santosh-Gollapudi/App_Lock/releases/tag/v1)).
+2. Under **Assets**, click on `AppLock-v1.0.apk` to download it.
+3. Open the downloaded file on your phone to install it. *(Note: You may need to allow "Install from Unknown Sources" in your browser or file manager settings).*
+4. **Crucial Step:** When you first launch the app, you will be prompted to enable **Accessibility Services** and **Device Admin** privileges. The app cannot function without these!
 
 ## Privacy Disclaimer
 

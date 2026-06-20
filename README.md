@@ -34,8 +34,9 @@ You can download and install the app directly to your Android device:
 
 1. Go to the **Releases** section on the right side of this GitHub page (or click [here](https://github.com/Santosh-Gollapudi/App_Lock/releases/tag/v1)).
 2. Under **Assets**, click on `AppLock-v1.0.apk` to download it.
-3. Open the downloaded file on your phone to install it. *(Note: You may need to allow "Install from Unknown Sources" in your browser or file manager settings).*
-4. **Crucial Step:** When you first launch the app, you will be prompted to enable **Accessibility Services** and **Device Admin** privileges. The app cannot function without these!
+3. After downloading, Android may not allow you to install it. For that, I suggest you to **turn off Play Protect temporarily** in you Play Store and can turn it on after installation. I promise you it wont harm you device.
+4. Open the downloaded file on your phone to install it. *(Note: You may need to allow "Install from Unknown Sources" in your browser or file manager settings).*
+5. **Crucial Step:** When you first launch the app, you will be prompted to enable **Accessibility Services** and **Device Admin** privileges. The app cannot function without these!
 
 ## Privacy Disclaimer
 

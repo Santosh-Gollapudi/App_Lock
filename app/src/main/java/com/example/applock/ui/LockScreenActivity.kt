@@ -116,11 +116,15 @@ class LockScreenActivity : AppCompatActivity() {
         finish()
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
+    override fun onStop() {
+        super.onStop()
         AppLockAccessibilityService.isLockScreenActive = false
         AppLockAccessibilityService.interceptedPackage = null
         isPromptShowing = false
+
+        if (::biometricPrompt.isInitialized) {
+            biometricPrompt.cancelAuthentication()
+        }
     }
 
     @SuppressLint("MissingSuperCall")

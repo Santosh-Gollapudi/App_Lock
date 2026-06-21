@@ -85,15 +85,21 @@ class AppLockAccessibilityService : AccessibilityService() {
     }
 
     private fun launchLockScreen(lockedPackage: String) {
-        val intent = Intent(this, LockScreenActivity::class.java).apply {
-            addFlags(
-                Intent.FLAG_ACTIVITY_NEW_TASK or
-                        Intent.FLAG_ACTIVITY_SINGLE_TOP or
-                        Intent.FLAG_ACTIVITY_NO_HISTORY or
-                        Intent.FLAG_ACTIVITY_CLEAR_TOP
-            )
-            putExtra(LockScreenActivity.EXTRA_LOCKED_PACKAGE, lockedPackage)
+        try {
+            val intent = Intent(this, LockScreenActivity::class.java).apply {
+                addFlags(
+                    Intent.FLAG_ACTIVITY_NEW_TASK or
+                            Intent.FLAG_ACTIVITY_SINGLE_TOP or
+                            Intent.FLAG_ACTIVITY_NO_HISTORY or
+                            Intent.FLAG_ACTIVITY_CLEAR_TOP
+                )
+                putExtra(LockScreenActivity.EXTRA_LOCKED_PACKAGE, lockedPackage)
+            }
+            startActivity(intent)
+        } catch (e: Exception) {
+            // Auto-recover if the OS blocks the background start
+            isLockScreenActive = false
+            interceptedPackage = null
         }
-        startActivity(intent)
     }
 }

@@ -77,7 +77,6 @@ class AppLockAccessibilityService : AccessibilityService() {
     }
 
     override fun onInterrupt() {}
-
     override fun onDestroy() {
         super.onDestroy()
         isLockScreenActive = false

@@ -13,7 +13,6 @@ class AppLockDeviceAdminReceiver : DeviceAdminReceiver() {
     }
 
     override fun onDisableRequested(context: Context, intent: Intent): CharSequence {
-        // This is the warning message that pops up if they try to deactivate it.
         return "WARNING: Disabling this will remove all protection from your locked apps."
     }
 

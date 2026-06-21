@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- 85% transparent black -->
     <solid android:color="#D9000000" />
-    <!-- Curves only the bottom corners -->
     <corners
         android:bottomLeftRadius="32dp"
         android:bottomRightRadius="32dp" />

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <device-admin xmlns:android="http://schemas.android.com/apk/res/android">
     <uses-policies>
-        <!-- This specific policy flag allows the app to act as an admin without requesting invasive wipe/password powers -->
         <force-lock />
     </uses-policies>
 </device-admin>
